@@ -1,14 +1,15 @@
-﻿@model Tangy.Models.Category
+﻿@model Tangy.Models.SubCategory
 
 @{
     ViewData["Title"] = "Details";
 }
 <hr />
-<hr />
-<hr />
+<hr/>
+<hr/>
 <br />
-<h2>Thông tin chủng lọai</h2>
+<h2>Chi tiết Loại sản phẩm</h2>
 <br />
+
 <div class="form-border">
     <fieldset disabled>
         <div class="form-group row">
@@ -21,14 +22,14 @@
         </div>
         <div class="form-group row">
             <div class="col-2">
-                <label asp-for="DisplayOrder" class="custom-label"></label>
+                <label asp-for="Category.Name" class="custom-label"></label>
             </div>
             <div class="col-4">
-                <input asp-for="DisplayOrder" class="form-control" />
+                <input asp-for="Category.Name" class="form-control" />
             </div>
         </div>
     </fieldset>
-
+    <br />
     <div class="form-group">
         <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Sửa</a>
         <a asp-action="Index" class="btn btn-success">Trở về</a>

@@ -13,14 +13,14 @@ namespace Tangy.Models
         [Required]
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Không để trống!")]
         [Display(Name = "Tên")]
         public string Name { get; set; }
 
         [Display(Name = "Mô tả")]
         public string Description { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Không để trống!")]
         [Display(Name = "Thứ tự")]
         public int DisplayOrder { get; set; }
 

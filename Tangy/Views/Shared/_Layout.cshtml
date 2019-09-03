@@ -29,8 +29,8 @@
                         Quản lý
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" asp-controller="Categories" asp-action="Index">Chủng loại</a>
-                        <a class="dropdown-item" href="#">Nhóm sản phẩm</a>
+                        <a class="dropdown-item" asp-controller="Categories" asp-action="Index">Nhóm sản phẩm</a>
+                        <a class="dropdown-item" asp-controller="SubCategories" asp-action="Index">Loại sản phẩm</a>
                         <a class="dropdown-item" href="#">Sản phẩm</a>
                         <a class="dropdown-item" href="#">Khuyến mãi</a>
                     </div>
@@ -92,8 +92,8 @@
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://kit.fontawesome.com/d3654694c4.js"></script>
-
-
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation/dist/additional-methods.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
