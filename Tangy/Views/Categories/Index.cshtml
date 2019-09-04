@@ -35,17 +35,18 @@
                         @Html.DisplayFor(modelItem => item.DisplayOrder)
                     </td>
                     <td style="width: 150px">
-                        <div class="btn-group" role="group">
-                            <a type="button" class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id" >
+                        @Html.Partial("_TableButtonPartial",item.Id)
+                        @*<div class="btn-group" role="group">
+                            <a type="button" class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">
                                 <i class="fas fa-edit"></i>
                             </a>
-                            <a type="button" class="btn btn-success" asp-action="Details" asp-route-id="@item.Id" >
+                            <a type="button" class="btn btn-success" asp-action="Details" asp-route-id="@item.Id">
                                 <i class="far fa-list-alt"></i>
                             </a>
-                            <a type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id" >
+                            <a type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">
                                 <i class="fas fa-trash-alt"></i>
                             </a>
-                        </div>
+                        </div>*@
                     </td>
                 </tr>
             }
