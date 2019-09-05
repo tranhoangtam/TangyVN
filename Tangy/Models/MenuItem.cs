@@ -18,7 +18,8 @@ namespace Tangy.Models
 	    public string Name { get; set; }
 		[Display(Name = "Mô tả")]
 	    public string Description { get; set; }
-	    public string Image { get; set; }
+        [Display(Name = "Ảnh")]
+        public string Image { get; set; }
 		[Range(1,int.MaxValue,ErrorMessage = "Giá bán phải lớn hơn 1 đồng")]
 		[Display(Name = "Giá bán")]
 	    public double Price { get; set; }
